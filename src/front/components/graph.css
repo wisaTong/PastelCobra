@@ -1,0 +1,5 @@
+.graph-container {
+  max-width: 800px;
+  display: flex;
+  margin-top: 4rem;
+}
