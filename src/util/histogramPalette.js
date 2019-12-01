@@ -1,5 +1,5 @@
 import _ from 'underscore';
-import { computeAverageColor } from '../util/image';
+import { computeAverageColor, imgDataFromUrl, collectPixels } from '../util/image';
 
 const DIMENSION_MAX = 256;
 
@@ -38,4 +38,10 @@ export function binPixels(pixels, bucketsPerDimension) {
     buckets: sortedBuckets,
     colors: bucketColors
   };
+}
+
+export async function histrogramPixelRun(url) {
+  const imgData = await imgDataFromUrl(url);
+  const pixels = await collectPixels(imgData);
+  return { url, ...binPixels(pixels, 3)};
 }

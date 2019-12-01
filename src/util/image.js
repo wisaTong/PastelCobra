@@ -35,8 +35,8 @@ export function computeAverageColor(pixels) {
   var totalGreen = _.reduce(pixels, (m, p) => m + p.g, 0);
   var totalBlue = _.reduce(pixels, (m, p) => m + p.b, 0);
   return {
-    red: (totalRed / pixels.length),
-    green: (totalGreen / pixels.length),
-    blue: (totalBlue / pixels.length)
+    r: (totalRed / pixels.length),
+    g: (totalGreen / pixels.length),
+    b: (totalBlue / pixels.length)
   };
 }
