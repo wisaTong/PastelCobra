@@ -1,0 +1,26 @@
+.big-img-holder {
+  position: relative;
+  width: 70%;
+  margin: auto;
+  margin-top: 4rem
+}
+
+.big-img-holder .big-image {
+  width: 100%;
+}
+
+.palette {
+  position: absolute;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.palette-color {
+  width: 150px;
+  height: 60px;
+}
