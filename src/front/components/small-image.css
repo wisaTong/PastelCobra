@@ -39,7 +39,7 @@
 }
 
 .close-button {
-  color: black;
+  color: rgb(75, 75, 75);
   position: fixed;
   top: 0px;
   right: 0px;
