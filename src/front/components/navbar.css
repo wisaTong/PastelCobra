@@ -9,7 +9,11 @@
 .nav-item-container {
   display: flex;
   align-items: center;
+}
+
+.nav-item-container > h3 {
   font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
   font-style: normal;
 }
 

@@ -3,10 +3,10 @@
   width: 70%;
   margin: auto;
   margin-top: 4rem;
-  max-height: 400px;
 }
 
 .big-img-holder .big-image {
+  max-height: 400px;
   position: relative;
   width: 100%;
 }
@@ -47,6 +47,8 @@
   margin: 0;
   margin-bottom: .3rem;
   font-size: .8rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
 }
 
 .bubble {
