@@ -4,6 +4,7 @@
   margin: auto;
   margin-top: 4rem;
   max-height: 400px;
+  overflow: hidden;
 }
 
 .big-img-holder .big-image {

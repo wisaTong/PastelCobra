@@ -9,7 +9,7 @@ import './app.css';
 
 // const dogs = ['https://static.scientificamerican.com/blogs/cache/file/BB6F1FE0-4FDE-4E6E-A986664CE30602E4_source.jpg?w=590&h=800&2F8476C1-DF14-49BA-84FFE94218CC4933']
 const pic = 'https://image.businessinsider.com/5dd3ad2c7eece57cd401f673?width=1100&format=jpeg&auto=webp'
-const TOKEN = 'IGQVJYOFJGYmIwUzM4bW5GUW1FVWUyMEZA1bmhoRUtreTZAUdGxOOWJqbWsxc1JDbE52WXZALaHpOTzlKTUVRaVptWEw2d01WSkhrRFQwMmV5djJTaEp5eWxtQUpHUHhVODQyZAFVQUHFIR1UxUWZAoVnV0OHVpUHVoS2hyV0dz';
+const TOKEN = 'IGQVJYbGFhS2libFRSZAFVxaTdkSlZAsRmc2bzFlZAFZAFRVRjM0wycFFRY3lHVHhrZAi1BSk5FQ1BXd1JObGtiUm4yZA2VxQnNuR2dRUWNDQVVubFZAJZATdhS0dpUE5VcTAybU5iQ3NaVUowbFZAtcjJIMHhjVjRCRzByODFuSDZAZA';
 const name = 'elonmusk'
 const rgb = { r: 0, g: 0, b: 0 };
 

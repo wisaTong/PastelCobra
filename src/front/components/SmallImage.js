@@ -41,7 +41,7 @@ function Overlay({ callback, imgUrl }) {
     <div className='overlay'>
       <img className='image-overlay' src={imgUrl}></img>
       <div id='histogram'></div>
-      <button className='close-button' onClick={callback}>[X]</button>
+      <button className='close-button' onClick={callback}>X</button>
     </div>
   )
 }
