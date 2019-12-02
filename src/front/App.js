@@ -27,7 +27,6 @@ function App() {
     .value();
 
   const sumBuckets = binPixels(allPxls, 3);
-  console.log(sumBuckets);
 
   return (
     <div className='flex-container'>
