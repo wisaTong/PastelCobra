@@ -2,7 +2,8 @@
   position: relative;
   width: 70%;
   margin: auto;
-  margin-top: 4rem
+  margin-top: 4rem;
+  max-height: 400px;
 }
 
 .big-img-holder .big-image {
