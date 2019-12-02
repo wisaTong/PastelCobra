@@ -32,9 +32,19 @@ function App() {
             <Graph imgUrl={pic} ></Graph>
           </div>
         </>
-        : null}
+        : <LoadingOverlay message="loading..."/>}
     </div>
   );
 }
+
+const LoadingOverlay = ({ message }) => {
+  return (
+    <div className='loading-container'>
+      <div className='loader'></div>
+      <p>{message}</p>
+    </div>
+  );
+}
+
 
 export default App;

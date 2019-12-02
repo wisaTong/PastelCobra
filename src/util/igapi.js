@@ -1,19 +1,18 @@
 import axios from 'axios';
+import queryString from 'querystring';
 
 /** https://developers.facebook.com/docs/instagram-basic-display-api/getting-started#step-5--exchange-the-code-for-a-token */
 export async function getToken(code) {
   const { APP_ID, APP_SECRET, REDIRECT_URI } = process.env;
-  return axios({
-    method: 'post',
-    url: 'https://api.instagram.com/oauth/access_token',
-    data: {
+  return axios.post('https://api.instagram.com/oauth/access_token',
+    queryString.stringify({
       app_id: APP_ID,
       app_secret: APP_SECRET,
       redirect_uri: REDIRECT_URI,
       grant_type: 'authorization_code',
       code: code
-    }
-  });
+    }),{ headers: { 'Content-Type': 'application/x-www-form-urlencoded'}}
+  );
 }
 
 /** https://developers.facebook.com/docs/instagram-basic-display-api/reference/me */

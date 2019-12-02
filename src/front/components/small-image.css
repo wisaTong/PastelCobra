@@ -18,18 +18,26 @@
 }
 
 .overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: black;
-  /* opacity: .5; */
-  /* width: 80%;
-  height: 100%; */
-  overflow: hidden;
-  /* object-fit: contain;
-  align-content: center;
-  justify-content: center; */
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
+  background-color: rgba(0, 0, 0, .7);
+}
+
+.image-overlay {
+  max-height: 500px;
+}
+
+#histogram {
+  width: 500px;
+  height: 500px;
+}
+
+.close-button {
+  color: white;
 }
