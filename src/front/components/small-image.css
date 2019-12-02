@@ -39,5 +39,10 @@
 }
 
 .close-button {
-  color: white;
+  color: black;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 30px;
+  height: 30px;
 }

@@ -9,6 +9,7 @@
 .nav-item-container {
   display: flex;
   align-items: center;
+  font-family: "Segoe UI";
 }
 
 .round {
