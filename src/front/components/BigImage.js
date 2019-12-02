@@ -1,17 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import chroma from 'chroma-js';
-import axios from 'axios';
 import _ from 'underscore';
 import './big-image.css';
 
-function BigImage({ imgUrl }) {
-  const [colors, setColors] = useState([]);
-
-  useEffect(() => {
-    axios.get('http://localhost:3000/v1/upload/arbitary?imgUrl=' + imgUrl)
-      .then(res => setColors(_.rest(res.data.colors.reverse(), -6)))
-  }, [])
-
+function BigImage({ colors, imgUrl }) {
   return (
     <div className='big-img-holder'>
       <img className='big-image' src={imgUrl}></img>

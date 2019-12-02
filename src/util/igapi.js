@@ -6,7 +6,7 @@ export async function getToken(code) {
   return axios({
     method: 'post',
     url: 'https://api.instagram.com/oauth/access_token',
-    params: {
+    data: {
       app_id: APP_ID,
       app_secret: APP_SECRET,
       redirect_uri: REDIRECT_URI,
