@@ -18,7 +18,7 @@ function Image({ imgUrl }) {
 
   return (
     <div className='image-frame'>
-      { overlay
+      {overlay
         ? <Overlay imgUrl={imgUrl} callback={() => setOverlay(false)} />
         : null
       }
@@ -33,15 +33,15 @@ function Overlay({ callback, imgUrl }) {
   if (buckets) plotOriginalData(histogram, _.flatten(buckets.buckets));
 
   useEffect(() => {
-    axios.get('http://localhost:3000/v1/upload/arbitary?' + querysting.stringify({imgUrl: imgUrl}))
+    axios.get('http://localhost:3000/v1/upload/arbitary?' + querysting.stringify({ imgUrl: imgUrl }))
       .then(res => setBuckets(res.data))
   }, [])
 
   return (
-    <div className='overlay' onClick={callback}>
+    <div className='overlay'>
       <img className='image-overlay' src={imgUrl}></img>
       <div id='histogram'></div>
-      <button className='close-button'>[X]</button>
+      <button className='close-button' onClick={callback}>[X]</button>
     </div>
   )
 }
