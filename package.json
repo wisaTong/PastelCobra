@@ -4,10 +4,9 @@
   "description": "อีสีนวลมันป็นงูเห่า",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server.js --exec babel-node",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production",
-    "devfe": "webpack-dev-server --mode development"
+    "dev:back": "nodemon server.js --exec babel-node",
+    "dev:front": "webpack-dev-server --mode development",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
