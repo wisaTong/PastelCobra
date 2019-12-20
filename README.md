@@ -7,13 +7,19 @@ PastelCobra in Thai is _อีสีนวลมันเป็นงูเห�
 Name  | KU Student ID
 ------------- | -------------
 Napasai Sutthichutipong | 6010545811
-Wisa Powtongchin | 6010545901
+Wisa Powthongchin | 6010545901
 Sorrawit Tantharatana | 6010545943
 
 Software and Knowledge Engineering \
 Faculty of Engineering Kasetsart University
-<!-- 
-## Requirements
 
-## Instruction -->
+## Required library
+1. Node.js
+2. Express for backend
+3. React.js for frontend
+4. Ploty for plot graph
+
+## Instruction
+1. npm i 
+2. npm start
 
