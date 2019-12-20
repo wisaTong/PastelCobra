@@ -8,23 +8,25 @@ import SmallImage from './components/SmallImage';
 import './app.css';
 
 // const dogs = ['https://static.scientificamerican.com/blogs/cache/file/BB6F1FE0-4FDE-4E6E-A986664CE30602E4_source.jpg?w=590&h=800&2F8476C1-DF14-49BA-84FFE94218CC4933']
-const pic = 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fd2.alternativeto.net%2Fdist%2Fs%2Fi-love-hue_714817_full.jpg%3Fformat%3Djpg%26width%3D1200%26height%3D1200%26mode%3Dcrop&f=1&nofb=1'
 // const TOKEN = 'IGQVJWNExjMk16cWlEdExaV1ZA5SHRPVk9leDJXdEItQ2NLTGZADUnVxeGpOTkxpYXJzTWJIZA0plUmJuQVhnWFdwLWtBVzFfaVFScVdyejdrOE9NRTNKSmxBLVg1YmE4ZAzJEaXFZANmVTN25ZAUTI5WkYteWlXeFB1Wnk2REln';
-const TOKEN = 'IGQVJVVWoyNTZA6MDZAYU0hHeUJJeEhLREdPWTZAsZAm5ZANWlFUWV2azRUN3g1WVpmeXRBSHdYejZADYUVwVkNsRDg3QVBRcXVhN1VGNlRuTHN1cWdIUUN6YUxfTnFsazFsbnB2ZAjNyVkU0RVkxRnpLZAnUyZAnlmN1dxdlk1UmFV';
+// const TOKEN = 'IGQVJVVWoyNTZA6MDZAYU0hHeUJJeEhLREdPWTZAsZAm5ZANWlFUWV2azRUN3g1WVpmeXRBSHdYejZADYUVwVkNsRDg3QVBRcXVhN1VGNlRuTHN1cWdIUUN6YUxfTnFsazFsbnB2ZAjNyVkU0RVkxRnpLZAnUyZAnlmN1dxdlk1UmFV';
+// const TOKEN = 'IGQVJYRGE5R1o4SVNHRExFaGRuUUZAjZA3BEWmlsWGdqRzExcHRHTWViamNUNVhQSTY4NE9WVTJIeUp4MkpTTklORHhRNXBIcjNvUDlVX2FrU25JS0NnQUJOcFlIY2U5QkJEMm81azNuUWYwUXhibHk5WmtLS1h1X1pFQUw0';
+
+const url = process.env.BASE_URL;
+const pic = 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fd2.alternativeto.net%2Fdist%2Fs%2Fi-love-hue_714817_full.jpg%3Fformat%3Djpg%26width%3D1200%26height%3D1200%26mode%3Dcrop&f=1&nofb=1'
 const getToken = async () => {
   const urlParams = new URLSearchParams(window.location.search);
   const code = urlParams.get('code');
-  const result = await axios.get('https://localhost:3000/v1/auth?code=' + code);
+  const result = await axios.get(url + 'v1/auth?code=' + code);
   return result.data.access_token;
 }
-// const TOKEN = 'IGQVJYRGE5R1o4SVNHRExFaGRuUUZAjZA3BEWmlsWGdqRzExcHRHTWViamNUNVhQSTY4NE9WVTJIeUp4MkpTTklORHhRNXBIcjNvUDlVX2FrU25JS0NnQUJOcFlIY2U5QkJEMm81azNuUWYwUXhibHk5WmtLS1h1X1pFQUw0';
 const name = 'PastelCobra'
 
 function App() {
   const [buckets, setBuckets] = useState([]);
 
   useEffect(async () => {
-    axios.get('https://localhost:3000/v1/ig/medias?access_token=' + await getToken())
+    axios.get(url + 'v1/ig/medias?access_token=' + await getToken())
       .then(res => setBuckets(res.data))
   }, [])
 

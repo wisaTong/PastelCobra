@@ -7,7 +7,7 @@ import https from 'https-localhost';
 import error from './util/error';
 import v1 from './v1';
 
-const app = https();
+const app = express();
 
 app.use(cors());
 app.use(morgan('dev'));

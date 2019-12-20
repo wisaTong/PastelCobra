@@ -34,4 +34,12 @@ module.exports = {
     , hotOnly: true
     , historyApiFallback: true
   }
+  , plugins: [
+    new webpack.DefinePlugin({
+      'process.env': {
+        'BASE_URL': "`http://127.0.0.1:3000/`"
+      }
+    })
+  ]
+
 };
