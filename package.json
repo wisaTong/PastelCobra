@@ -4,6 +4,8 @@
   "description": "อีสีนวลมันป็นงูเห่า",
   "main": "index.js",
   "scripts": {
+    "prestart": "npm run build",
+    "start": "nodemon server.js --exec babel-node",
     "dev:back": "nodemon server.js --exec babel-node",
     "dev:front": "webpack-dev-server --mode development",
     "prebuild": "cp public/index.html dist",
