@@ -13,7 +13,7 @@ import './app.css';
 // const TOKEN = 'IGQVJYRGE5R1o4SVNHRExFaGRuUUZAjZA3BEWmlsWGdqRzExcHRHTWViamNUNVhQSTY4NE9WVTJIeUp4MkpTTklORHhRNXBIcjNvUDlVX2FrU25JS0NnQUJOcFlIY2U5QkJEMm81azNuUWYwUXhibHk5WmtLS1h1X1pFQUw0';
 
 const url = process.env.BASE_URL;
-const pic = 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fd2.alternativeto.net%2Fdist%2Fs%2Fi-love-hue_714817_full.jpg%3Fformat%3Djpg%26width%3D1200%26height%3D1200%26mode%3Dcrop&f=1&nofb=1'
+const pic = 'https://i.imgur.com/DzalRsB.png'
 const getToken = async () => {
   const urlParams = new URLSearchParams(window.location.search);
   const code = urlParams.get('code');
