@@ -8,10 +8,11 @@ import SmallImage from './components/SmallImage';
 import './app.css';
 
 // const dogs = ['https://static.scientificamerican.com/blogs/cache/file/BB6F1FE0-4FDE-4E6E-A986664CE30602E4_source.jpg?w=590&h=800&2F8476C1-DF14-49BA-84FFE94218CC4933']
-const pic = 'https://image.businessinsider.com/5dd3ad2c7eece57cd401f673?width=1100&format=jpeg&auto=webp'
-const TOKEN = 'IGQVJVM3YwRGV4YnZAuUWxzUUdCLTN6c0tHQ3BzUDBnOFMzelJTQ3AzVVBlZA21EN090Q1VwNzh2dllrQV9GTlV2UjhqNDVMeVNKWWlZAalZATNkdOMmxFbEF2X1Jud0U3T1BvVE16UE1QY0ttYnhLUmJtLVMyZAjQ5TjRNQXZAj';
-const name = 'elonmusk'
-const rgb = { r: 0, g: 0, b: 0 };
+const pic = 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fd2.alternativeto.net%2Fdist%2Fs%2Fi-love-hue_714817_full.jpg%3Fformat%3Djpg%26width%3D1200%26height%3D1200%26mode%3Dcrop&f=1&nofb=1'
+// const TOKEN = 'IGQVJWNExjMk16cWlEdExaV1ZA5SHRPVk9leDJXdEItQ2NLTGZADUnVxeGpOTkxpYXJzTWJIZA0plUmJuQVhnWFdwLWtBVzFfaVFScVdyejdrOE9NRTNKSmxBLVg1YmE4ZAzJEaXFZANmVTN25ZAUTI5WkYteWlXeFB1Wnk2REln';
+const TOKEN = 'IGQVJWUDR0YVI0bUJuXzhSc3BCT0JCVTdMNk9LcVFLVEdYMC1ENkNSc0xnbjlWYXpnMlR6Y0I0cDJhT2VQSnRCR056V0d2RzZADQ3NwUmdKMFBsQjRxbWFFWDRIVDBoR1F3VHNOVXRVWDFzX3p2cnhZAWEtUOVh1ZAzlkUWRR';
+// const TOKEN = 'IGQVJYRGE5R1o4SVNHRExFaGRuUUZAjZA3BEWmlsWGdqRzExcHRHTWViamNUNVhQSTY4NE9WVTJIeUp4MkpTTklORHhRNXBIcjNvUDlVX2FrU25JS0NnQUJOcFlIY2U5QkJEMm81azNuUWYwUXhibHk5WmtLS1h1X1pFQUw0';
+const name = 'PastelCobra'
 
 function App() {
   const [buckets, setBuckets] = useState([]);
