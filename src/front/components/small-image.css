@@ -1,0 +1,48 @@
+.small-img-container {
+  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 4rem;
+}
+
+.image-frame {
+  width: 30%;
+  height: 250px;
+  margin: calc(10% / 6);
+  overflow: hidden;
+}
+
+.image {
+  height: 100%;
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .7);
+}
+
+.image-overlay {
+  max-height: 500px;
+}
+
+#histogram {
+  width: 500px;
+  height: 500px;
+}
+
+.close-button {
+  color: rgb(75, 75, 75);
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 30px;
+  height: 30px;
+}

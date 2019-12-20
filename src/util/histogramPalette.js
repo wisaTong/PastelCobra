@@ -31,7 +31,7 @@ export function binPixels(pixels, bucketsPerDimension) {
   let bucketColors = _.map(keys, (key, index) => {
     let pixelsInBucket = bucketMap[key];
     let averageColor = computeAverageColor(pixelsInBucket);
-    return averageColor;
+    return {percent: (pixelsInBucket.length/pixels.length) * 100, ...averageColor};
   });
 
   return {

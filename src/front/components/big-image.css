@@ -1,0 +1,60 @@
+.big-img-holder {
+  position: relative;
+  width: 70%;
+  margin: auto;
+  margin-top: 4rem;
+  overflow: hidden;
+}
+
+.big-img-holder .big-image {
+  max-height: 400px;
+  position: relative;
+  width: 100%;
+}
+
+.palette {
+  position: absolute;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.palette-color {
+  width: 150px;
+  height: 60px;
+}
+
+.palette-hilight {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 1.3rem;
+}
+
+.bubble-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bubble-container > p {
+  color: black;
+  margin: 0;
+  margin-bottom: .3rem;
+  font-size: .8rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.bubble {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: .7rem;
+}
