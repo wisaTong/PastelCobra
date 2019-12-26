@@ -22,4 +22,5 @@ Faculty of Engineering Kasetsart University
 ## Instruction
 1. npm i 
 2. npm start
-
+3. Enter this link https://api.instagram.com/oauth/authorize?app_id=754866428313827&redirect_uri=https%3A%2F%2F127.0.0.1%3A3000%2F&scope=user_profile,user_media&response_type=code 
+4. Delete the 's' in the 'https' link above to be 'http' and enter
